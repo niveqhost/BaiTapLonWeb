@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="148ce0998abe469995019eeb4bc92e95" Name="Diagram1">
+        <EntityTypeShape EntityType="DocTinTucModel.BAIDANG" Width="1.5" PointX="3" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="DocTinTucModel.CHUYENMUC" Width="1.5" PointX="2.75" PointY="5.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DocTinTucModel.LUOTXEM" Width="1.5" PointX="5.25" PointY="1.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="DocTinTucModel.TAIKHOAN" Width="1.5" PointX="0.75" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="DocTinTucModel.THELOAI" Width="1.5" PointX="0.75" PointY="5.875" IsExpanded="true" />
+        <AssociationConnector Association="DocTinTucModel.FK_BAIDANG_TAIKHOAN" ManuallyRouted="false" />
+        <AssociationConnector Association="DocTinTucModel.FK_BAIDANG_THELOAI" ManuallyRouted="false" />
+        <AssociationConnector Association="DocTinTucModel.FK_LUOTXEM_BAIDANG" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

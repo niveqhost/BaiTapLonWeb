@@ -1,0 +1,16 @@
+D:\Learn\VS Projects\source\BaiTapLonWeb\DocTinTuc\Model\bin\Debug\Model.dll.config
+D:\Learn\VS Projects\source\BaiTapLonWeb\DocTinTuc\Model\bin\Debug\Model.dll
+D:\Learn\VS Projects\source\BaiTapLonWeb\DocTinTuc\Model\bin\Debug\Model.pdb
+D:\Learn\VS Projects\source\BaiTapLonWeb\DocTinTuc\Model\bin\Debug\EntityFramework.dll
+D:\Learn\VS Projects\source\BaiTapLonWeb\DocTinTuc\Model\bin\Debug\EntityFramework.SqlServer.dll
+D:\Learn\VS Projects\source\BaiTapLonWeb\DocTinTuc\Model\bin\Debug\PagedList.dll
+D:\Learn\VS Projects\source\BaiTapLonWeb\DocTinTuc\Model\bin\Debug\PagedList.Mvc.dll
+D:\Learn\VS Projects\source\BaiTapLonWeb\DocTinTuc\Model\bin\Debug\EntityFramework.xml
+D:\Learn\VS Projects\source\BaiTapLonWeb\DocTinTuc\Model\bin\Debug\EntityFramework.SqlServer.xml
+D:\Learn\VS Projects\source\BaiTapLonWeb\DocTinTuc\Model\bin\Debug\PagedList.xml
+D:\Learn\VS Projects\source\BaiTapLonWeb\DocTinTuc\Model\bin\Debug\PagedList.Mvc.xml
+D:\Learn\VS Projects\source\BaiTapLonWeb\DocTinTuc\Model\obj\Debug\Model.csprojAssemblyReference.cache
+D:\Learn\VS Projects\source\BaiTapLonWeb\DocTinTuc\Model\obj\Debug\Model.csproj.CoreCompileInputs.cache
+D:\Learn\VS Projects\source\BaiTapLonWeb\DocTinTuc\Model\obj\Debug\Model.csproj.CopyComplete
+D:\Learn\VS Projects\source\BaiTapLonWeb\DocTinTuc\Model\obj\Debug\Model.dll
+D:\Learn\VS Projects\source\BaiTapLonWeb\DocTinTuc\Model\obj\Debug\Model.pdb
