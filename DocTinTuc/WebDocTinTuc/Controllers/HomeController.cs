@@ -1,9 +1,11 @@
 ﻿using Model.DAO;
+using Model.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using WebDocTinTuc.Common;
 
 namespace WebDocTinTuc.Controllers
 {
@@ -13,8 +15,6 @@ namespace WebDocTinTuc.Controllers
         {
             ViewBag._KLastestNews = new PostDao().LastestNews();
             ViewBag._K_LastestNews25 = new PostDao().SecondToFourthNews();
-
-
 
             //Lấy các bài đăng thể loại tình yêu
             ViewBag.tinhyeu = new PostDao().postLove();
@@ -36,18 +36,35 @@ namespace WebDocTinTuc.Controllers
             return View();
         }
 
-        public ActionResult About()
+        [HttpGet]
+        public ActionResult Register()
         {
-            ViewBag.Message = "Your application description page.";
-
             return View();
         }
 
-        public ActionResult Contact()
+        //Gửi thông tin về server và chờ xử lý
+        [HttpPost]
+        public ActionResult Register(TAIKHOAN tk)
         {
-            ViewBag.Message = "Your contact page.";
+            if (ModelState.IsValid)
+            {
+                var DAO = new AccountDao();
+                var passmd5 = Encryptor.MD5Hash(tk.MatKhau);
+                tk.MatKhau = passmd5;
+                tk.QuyenHan = "U";
+                tk.TrangThaiNguoiDung = "bình thường";
+                long id = DAO.addAccount(tk);
+                if (id > 0)
+                {
+                    return RedirectToAction("Index", "Home");
+                }
+                else
+                {
+                    ModelState.AddModelError("", "Tạo tài khoản thất bại");
+                }
 
-            return View();
+            }
+            return View("Index");
         }
 
         //Xử lý menu

@@ -133,7 +133,12 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Common\CommonConstant.cs" />
+    <Compile Include="Common\Encryptor.cs" />
+    <Compile Include="Common\RewriteURL.cs" />
+    <Compile Include="Common\UserInfo.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\NewsController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -1774,6 +1779,7 @@
     <Content Include="Images\images\Post\tom chua cay dspl3.jpg" />
     <Content Include="Images\images\Post\Tony_Tony_Chopper_full_45063.jpg" />
     <Content Include="Images\images\Post\vu-van-tien1.jpg" />
+    <Content Include="Images\Zhoolego-Material-Games.ico" />
     <Content Include="Images\_thumbs\Files\1-1507110791584.png" />
     <Content Include="Images\_thumbs\Files\1-1508737965560.jpg" />
     <Content Include="Images\_thumbs\Files\1-1508748283362.jpg" />
@@ -2245,9 +2251,10 @@
     <Content Include="Views\Shared\Error.cshtml" />
     <Content Include="Views\Shared\_LayoutClient.cshtml" />
     <Content Include="Views\Home\About.cshtml" />
-    <Content Include="Views\Home\Contact.cshtml" />
+    <Content Include="Views\Home\Register.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Home\MainMenu.cshtml" />
+    <Content Include="Views\News\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

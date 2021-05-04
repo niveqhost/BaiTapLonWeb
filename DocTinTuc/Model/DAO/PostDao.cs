@@ -77,7 +77,7 @@ namespace Model.DAO
             return db.BAIDANGs.Find(id);
         }
 
-        //Lấy thông tin bài đưng cùng thể loại
+        //Lấy thông tin bài đăng cùng thể loại
         public IEnumerable<BAIDANG> ListAllPostForType(string UrlRequire, int page, int pageSize)
         {
             IQueryable<BAIDANG> model = db.BAIDANGs.Where(x => x.THELOAI.UrlRequire == UrlRequire && x.TrangThaiBaiDang.ToUpper() == "ĐÃ DUYỆT").OrderByDescending(x => x.IDBaiDang).Skip(0);

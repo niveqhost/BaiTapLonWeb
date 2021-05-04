@@ -1,8 +1,8 @@
 ﻿@using Model.Models;
 @{
     Layout = "~/Views/Shared/_LayoutClient.cshtml";
-    var lastestnews25 = (List<BAIDANG>)ViewBag._K_LastestNews25;
-    var lastestnews1 = (List<BAIDANG>)ViewBag._KLastestNews;
+    var lastestNews25 = (List<BAIDANG>)ViewBag._K_LastestNews25;
+    var lastestNews1 = (List<BAIDANG>)ViewBag._KLastestNews;
 
     var listlove = (List<BAIDANG>)ViewBag.tinhyeu;
     var listdoisong = (List<BAIDANG>)ViewBag.doisong;
@@ -20,17 +20,17 @@
 
 
 <div class="content_top">
-    <div class="row top5news">
+    <div class="row top5doc-bao">
 
         <!-- BÀI ĐĂNG MỚI NHẤT_TOP1 -->
-        <div class="col-lg-6 col-md-6 col-sm6 newsstop1">
+        <div class="col-lg-6 col-md-6 col-sm6 doc-baostop1">
             <div class="latest_slider">
                 <!-- Set up your HTML -->
                 <div class="slick_slider">
                     <div class="single_iteam">
-                        @foreach (var item123 in lastestnews1)
+                        @foreach (var item123 in lastestNews1)
                         {
-                            <a class="slider_tittle" title="@item123.TenBaiDang" href="/Doc-bao/@item123.UrlRequire-@item123.IDBaiDang" target="_blank">
+                            <a class="slider_tittle" title="@item123.TenBaiDang" href="/doc-bao/@item123.UrlRequire-@item123.IDBaiDang" target="_blank">
                                 <img class="img_top1_home" src="@item123.AnhDaiDien" alt="img">
                                 <h4>
                                     @item123.TenBaiDang
@@ -42,13 +42,13 @@
             </div>
         </div> <!-- End content top latest slider -->
         <!-- BÀI ĐĂNG MỚI NHẤT_TOP từ 2 đến 4 -->
-        <div class="col-lg-6 col-md-6 col-sm6 newsstop1">
+        <div class="col-lg-6 col-md-6 col-sm6 doc-baostop1">
             <div class="content_top_right">
                 <ul class="featured_nav wow fadeInDown">
-                    @foreach (var item in lastestnews25)
+                    @foreach (var item in lastestNews25)
                     {
                         <li>
-                            <a href="/Doc-bao/@item.UrlRequire-@item.IDBaiDang" title="@item.TenBaiDang" target="_blank">
+                            <a href="/doc-bao/@item.UrlRequire-@item.IDBaiDang" title="@item.TenBaiDang" target="_blank">
                                 <img class="img_topn_home" src="@item.AnhDaiDien" alt="@item.TenBaiDang">
                                 <div class="title_caption">
                                     @item.TieuDe
@@ -80,9 +80,9 @@
                         <ul class="fashion_catgnav">
                             <li>
                                 <div class="catgimg2_container">
-                                    <a href="/Doc-bao/@item.UrlRequire-@item.IDBaiDang"><img alt="img" src="@item.AnhDaiDien"></a>
+                                    <a href="/doc-bao/@item.UrlRequire-@item.IDBaiDang"><img alt="img" src="@item.AnhDaiDien"></a>
                                 </div>
-                                <h2 class="catg_titile"><a href="/Doc-bao/@item.UrlRequire-@item.IDBaiDang">  @item.TenBaiDang</a></h2>
+                                <h2 class="catg_titile"><a href="/doc-bao/@item.UrlRequire-@item.IDBaiDang">  @item.TenBaiDang</a></h2>
                             </li>
                         </ul>
                     </div>
@@ -101,9 +101,9 @@
                         <ul class="fashion_catgnav">
                             <li>
                                 <div class="catgimg2_container">
-                                    <a href="/Doc-bao/@item.UrlRequire-@item.IDBaiDang"><img alt="img" src="@item.AnhDaiDien"></a>
+                                    <a href="/doc-bao/@item.UrlRequire-@item.IDBaiDang"><img alt="img" src="@item.AnhDaiDien"></a>
                                 </div>
-                                <h2 class="catg_titile"><a href="/Doc-bao/@item.UrlRequire-@item.IDBaiDang">  @item.TenBaiDang</a></h2>
+                                <h2 class="catg_titile"><a href="/doc-bao/@item.UrlRequire-@item.IDBaiDang">  @item.TenBaiDang</a></h2>
                             </li>
                         </ul>
                     </div>
@@ -122,9 +122,9 @@
                         <ul class="fashion_catgnav">
                             <li>
                                 <div class="catgimg2_container">
-                                    <a href="/Doc-bao/@item.UrlRequire-@item.IDBaiDang"><img alt="img" src="@item.AnhDaiDien"></a>
+                                    <a href="/doc-bao/@item.UrlRequire-@item.IDBaiDang"><img alt="img" src="@item.AnhDaiDien"></a>
                                 </div>
-                                <h2 class="catg_titile"><a href="/Doc-bao/@item.UrlRequire-@item.IDBaiDang">  @item.TenBaiDang</a></h2>
+                                <h2 class="catg_titile"><a href="/doc-bao/@item.UrlRequire-@item.IDBaiDang">  @item.TenBaiDang</a></h2>
                             </li>
                         </ul>
                     </div>
@@ -143,9 +143,9 @@
                         <ul class="fashion_catgnav">
                             <li>
                                 <div class="catgimg2_container">
-                                    <a href="/Doc-bao/@item.UrlRequire-@item.IDBaiDang"><img alt="img" src="@item.AnhDaiDien"></a>
+                                    <a href="/doc-bao/@item.UrlRequire-@item.IDBaiDang"><img alt="img" src="@item.AnhDaiDien"></a>
                                 </div>
-                                <h2 class="catg_titile"><a href="/Doc-bao/@item.UrlRequire-@item.IDBaiDang">  @item.TenBaiDang</a></h2>
+                                <h2 class="catg_titile"><a href="/doc-bao/@item.UrlRequire-@item.IDBaiDang">  @item.TenBaiDang</a></h2>
                             </li>
                         </ul>
                     </div>
@@ -164,9 +164,9 @@
                         <ul class="fashion_catgnav">
                             <li>
                                 <div class="catgimg2_container">
-                                    <a href="/Doc-bao/@item.UrlRequire-@item.IDBaiDang"><img alt="img" src="@item.AnhDaiDien"></a>
+                                    <a href="/doc-bao/@item.UrlRequire-@item.IDBaiDang"><img alt="img" src="@item.AnhDaiDien"></a>
                                 </div>
-                                <h2 class="catg_titile"><a href="/Doc-bao/@item.UrlRequire-@item.IDBaiDang">  @item.TenBaiDang</a></h2>
+                                <h2 class="catg_titile"><a href="/doc-bao/@item.UrlRequire-@item.IDBaiDang">  @item.TenBaiDang</a></h2>
                             </li>
                         </ul>
                     </div>
