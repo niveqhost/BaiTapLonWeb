@@ -134,8 +134,6 @@ namespace Model.DAO
 
         }
 
-
-
         public int loginAccount(string username, string pass)
         {
             var result = db.TAIKHOANs.SingleOrDefault(x => x.TenTaiKhoan == username);

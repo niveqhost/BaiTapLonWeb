@@ -45,7 +45,7 @@ namespace WebDocTinTuc
             //Map cho đăng kí
             routes.MapRoute(
                 name: "DangKi",
-                url: "Dang-Ki",
+                url: "DangKi",
                 defaults: new { controller = "Home", action = "Register", id = UrlParameter.Optional }
             );
 

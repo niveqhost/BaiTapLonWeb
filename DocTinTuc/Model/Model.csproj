@@ -66,6 +66,8 @@
     <Compile Include="DAO\AccountDao.cs" />
     <Compile Include="DAO\CateDao.cs" />
     <Compile Include="DAO\PostDao.cs" />
+    <Compile Include="DAO\TypeDao.cs" />
+    <Compile Include="DAO\ViewsDao.cs" />
     <Compile Include="Models\BAIDANG.cs">
       <DependentUpon>DocTinTucModel.tt</DependentUpon>
     </Compile>
