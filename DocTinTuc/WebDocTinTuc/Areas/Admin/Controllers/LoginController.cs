@@ -1,8 +1,10 @@
-﻿using System;
+﻿using Model.DAO;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using WebDocTinTuc.Areas.Admin.Models;
 using WebDocTinTuc.Common;
 
 namespace WebDocTinTuc.Areas.Admin.Controllers
@@ -26,6 +28,64 @@ namespace WebDocTinTuc.Areas.Admin.Controllers
                 }
             }
             return View();
+        }
+        public ActionResult Login(LoginModel model)
+        {
+            if (ModelState.IsValid)
+            {
+                var dao = new AccountDao();
+                var result = dao.loginAccount(model.username, Encryptor.MD5Hash(model.password));
+                switch (result)
+                {
+                    //Đăng nhập quyền admin
+                    case 1:
+                        {
+                            var user = dao.GetByID(model.username);
+                            var userSession = new UserInfo();
+                            userSession.Username = user.TenTaiKhoan;
+                            userSession.UserID = user.IDTaiKhoan;
+                            Session.Add(Common.CommonConstant.ADMIN_SESSION, userSession);
+                            Session["USER_ID"] = userSession.UserID;
+                            return RedirectToAction("Index", "AdminHome");
+                        }
+                    //Đăng nhập quyền người đăng
+                    case 2:
+                        {
+                            var userId = dao.GetByID(model.username);
+                            var userSession = new UserInfo();
+                            userSession.Username = userId.TenTaiKhoan;
+                            userSession.UserID = userId.IDTaiKhoan;
+                            Session.Add(Common.CommonConstant.USER_SESSION, userSession);
+                            Session["USER_ID"] = userSession.UserID;
+                            return RedirectToAction("Index", "UserHome");
+                            
+                        }
+
+                    //Đăng nhập trường hợp tài khoản bị khóa
+                    case -1:
+                        {
+                            ModelState.AddModelError("", "Tài khoản này đã bị khóa!");
+                            break;
+
+                        }
+
+                    //Đăng nhập trường hợp sai mật khẩu
+                    case -2:
+                        {
+                            ModelState.AddModelError("", "Mật khẩu không đúng!");
+                            break;
+                        }
+
+                    //Đăng nhập trường hợp sai tên tài khoản
+                    case 0:
+                        {
+                            ModelState.AddModelError("", "Tài khoản không tồn tại.");
+                            break;
+                        }
+                }
+
+            }
+            return View("Index");
         }
     }
 }

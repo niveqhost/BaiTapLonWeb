@@ -1,5 +1,4 @@
-﻿
-@{
+﻿@{
     Layout = null;
 }
 
@@ -17,6 +16,8 @@
     <meta name="author" content="">
 
     <title>Đăng nhập tài khoản</title>
+
+    <link rel="shortcut icon" href="@Url.Content("~/Images/Zhoolego-Material-Games.ico")" type="image/x-icon">
 
     <!-- Bootstrap Core CSS -->
     <link href="~/Assets/admin/bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -53,7 +54,7 @@
                                 </div>
                                 <div class="checkbox">
                                     <label>
-                                        @Html.CheckBoxFor(model => model.remember); Nhớ tài khoản
+                                        @Html.CheckBoxFor(model => model.remember) Nhớ tài khoản
                                     </label>
                                 </div>
                                 <!-- Change this to a button or input when using this as a form -->

@@ -30,3 +30,4 @@ D:\Learn\Backup\BaiTapLonWeb\DocTinTuc\Model\obj\Debug\Model.csproj.CoreCompileI
 D:\Learn\Backup\BaiTapLonWeb\DocTinTuc\Model\obj\Debug\Model.csproj.CopyComplete
 D:\Learn\Backup\BaiTapLonWeb\DocTinTuc\Model\obj\Debug\Model.dll
 D:\Learn\Backup\BaiTapLonWeb\DocTinTuc\Model\obj\Debug\Model.pdb
+D:\Learn\VS Projects\source\BaiTapLonWeb\DocTinTuc\Model\bin\Debug\AjaxControlToolkit.dll

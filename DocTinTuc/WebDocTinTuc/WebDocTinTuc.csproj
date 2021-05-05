@@ -155,6 +155,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="App_Data\DocTinTuc.sql" />
     <Content Include="Assets\Admin\Admin.css" />
     <Content Include="Assets\Admin\bower_components\bootstrap-social\.gitignore" />
     <Content Include="Assets\Admin\bower_components\bootstrap-social\bootstrap-social.css" />
@@ -2380,7 +2381,6 @@
     <Content Include="Scripts\popper-utils.js.map" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="App_Data\" />
     <Folder Include="Areas\Admin\Data\" />
     <Folder Include="Content\Image\Upload\" />
     <Folder Include="Images\flash\" />
