@@ -76,11 +76,17 @@
                         js.src = "//connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v2.5&appId=409801852540765";
                         fjs.parentNode.insertBefore(js, fjs);
                     }(document, 'script', 'facebook-jssdk'));</script>
+
                 @foreach (var item in newsbyid)
                 {
                     <div class="fb-like" data-href="docbaomoingay.tk/doc-bao/@item.UrlRequire-@item.IDBaiDang" title="" data-width="740px" data-layout="standard" data-action="like" data-show-faces="true" data-share="true"></div>
 
                     <div class="fb-comments" data-href="docbaomoingay.tk/doc-bao/@item.UrlRequire-@item.IDBaiDang" data-width="740px" data-numposts="5" data-colorscheme="light"></div>
+                }
+
+                @using (Html.BeginForm("PostComment", "ChatRoom", FormMethod.Post))
+                {
+                    <input class="" type="text"/>
                 }
             </div>
         </div>

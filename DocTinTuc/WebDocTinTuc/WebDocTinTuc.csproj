@@ -141,7 +141,11 @@
     <Compile Include="Areas\Admin\Controllers\BaseAdminController.cs" />
     <Compile Include="Areas\Admin\Controllers\BaseUserController.cs" />
     <Compile Include="Areas\Admin\Controllers\LoginController.cs" />
+    <Compile Include="Areas\Admin\Controllers\PostManagerController.cs" />
+    <Compile Include="Areas\Admin\Controllers\TypeManagerController.cs" />
     <Compile Include="Areas\Admin\Controllers\UserHomeController.cs" />
+    <Compile Include="Areas\Admin\Controllers\UserManagerController.cs" />
+    <Compile Include="Areas\Admin\Controllers\UserPostManagerController.cs" />
     <Compile Include="Areas\Admin\Models\LoginModel.cs" />
     <Compile Include="Common\CommonConstant.cs" />
     <Compile Include="Common\Encryptor.cs" />
@@ -2276,6 +2280,18 @@
     <Content Include="Areas\Admin\Views\AccountManager\ListPoster.cshtml" />
     <Content Include="Areas\Admin\Views\AccountManager\UpdateAccount.cshtml" />
     <Content Include="Areas\Admin\Views\AccountManager\CreateAccount.cshtml" />
+    <Content Include="Areas\Admin\Views\UserPostManager\MyPost.cshtml" />
+    <Content Include="Areas\Admin\Views\UserPostManager\Create.cshtml" />
+    <Content Include="Areas\Admin\Views\PostManager\Index.cshtml" />
+    <Content Include="Areas\Admin\Views\PostManager\PostWaiting.cshtml" />
+    <Content Include="Areas\Admin\Views\PostManager\Create.cshtml" />
+    <Content Include="Areas\Admin\Views\PostManager\UpdatePost.cshtml" />
+    <Content Include="Areas\Admin\Views\PostManager\Preview.cshtml" />
+    <Content Include="Areas\Admin\Views\PostManager\UnAcept.cshtml" />
+    <Content Include="Areas\Admin\Views\PostManager\MyPost.cshtml" />
+    <Content Include="Areas\Admin\Views\TypeManager\Index.cshtml" />
+    <Content Include="Areas\Admin\Views\TypeManager\UpdateType.cshtml" />
+    <Content Include="Areas\Admin\Views\TypeManager\AddType.cshtml" />
     <None Include="Scripts\jquery-3.6.0.intellisense.js" />
     <Content Include="Scripts\jquery-3.6.0.js" />
     <Content Include="Scripts\jquery-3.6.0.min.js" />
@@ -2389,6 +2405,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Areas\Admin\Data\" />
+    <Folder Include="Areas\Admin\Views\UserManager\" />
     <Folder Include="Content\Image\Upload\" />
     <Folder Include="Images\flash\" />
     <Folder Include="Models\" />

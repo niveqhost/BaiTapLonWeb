@@ -32,7 +32,7 @@ namespace WebDocTinTuc
             routes.MapRoute(
                 name: "nguoidang",
                 url: "Nguoi-dang/{TenTaiKhoan}-{id}",
-                defaults: new { controller = "DocBao", action = "DocBaoTheoNguoiDang", id = UrlParameter.Optional }
+                defaults: new { controller = "News", action = "DocBaoTheoNguoiDang", id = UrlParameter.Optional }
             );
 
             //Map cho trang thể loại bài báo

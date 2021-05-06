@@ -20,7 +20,6 @@ namespace WebDocTinTuc.Controllers
             //Lấy 10 bài đăng cùng thể loại
             ViewBag._k_relative = dao.top10Relative(id);
 
-
             //Lấy 10 bài đăng cùng người đăng
             ViewBag._k_poster = dao.top10CungNguoiDang(id);
 

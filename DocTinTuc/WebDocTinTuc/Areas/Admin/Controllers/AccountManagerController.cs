@@ -102,7 +102,7 @@ namespace WebDocTinTuc.Areas.Admin.Controllers
             return View();
         }
 
-        //Gửi thông tin về sever và chờ xử Lý
+        //Gửi thông tin về server và chờ xử lý
         [HttpPost]
         public ActionResult CreateAccount(TAIKHOAN tk)
         {
